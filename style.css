@@ -1,0 +1,231 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+  position: fixed;
+  top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+.logo a {
+    font-size: 24px;
+    color: navy;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: navy;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid navy;
+    padding-bottom: 3px;
+}
+
+.down-arrow {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid navy;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 51, 128, 0.7); /* #053380 background at 70% opacity */
+    border-radius: 25px;
+    padding: 5px;
+    width: 400px; /* Adjust width as per your preference */
+}
+
+.search-bar {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent; /* Transparent background */
+}
+
+.search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White placeholder at 70% opacity */
+}
+
+ {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica, sans-serif;
+            background-color: #3d6ba3;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Ticket and Confirmation Container */
+        .container {
+            display: flex;
+            background-color: #3d6ba3;
+            border-radius: 10px;
+            padding: 20px;
+            gap: 20px;
+          margin-top: 100px;
+          
+        }
+
+        /* Ticket Styles */
+        .ticket {
+            background-color: #053380;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .ticket-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ticket h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .ticket h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .ticket-details {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        /* Add to Wallet button */
+        .add-to-wallet {
+            display: block;
+            background-color: #053380;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Confirmation Section */
+        .confirmation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #3d6ba3;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            width: 300px;
+        }
+
+        .confirmation h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .confirmation p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .confirmation input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .mobile-input {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ticket, .confirmation {
+                width: 100%;
+            }
+        }
+    .green-button, .red-button {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.green-button {
+    background-color: #28a745;
+}
+
+.green-button:hover {
+    background-color: #218838;
+}
+
+.red-button {
+    background-color: #dc3545;
+}
+
+.red-button:hover {
+    background-color: #c82333;
+}
